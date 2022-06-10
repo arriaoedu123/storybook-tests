@@ -4,7 +4,8 @@
     "src",
     "types",
     "src/Button/Button.stories.tsx",
-    "src/defaultDS.tsx",
+    "src/Button/Buttons.stories.tsx",
+    "src/defaultDS.tsx"
   ],
   "compilerOptions": {
     "target": "es5",

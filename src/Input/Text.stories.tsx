@@ -13,4 +13,5 @@ export const TextField = Template.bind({});
 
 TextField.args = {
   children: 'Text',
+  variant: 'primary',
 };

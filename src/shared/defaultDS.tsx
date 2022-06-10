@@ -1,4 +1,6 @@
-import { botaozin } from "../Button/Button.tokens"
+import { botaozin } from '../Button/Button.tokens';
+import { inputs } from '../Input/Text.tokens';
+import { card } from '../Card/Card.tokens';
 
 export const defaultDS = () => ({
   color: {
@@ -14,9 +16,17 @@ export const defaultDS = () => ({
     black: '#000',
   },
 
+  alignItem: {
+    left: 'flex-start',
+    center: 'center',
+    right: 'flex-end',
+  },
+
   get components() {
     return {
       botaozin: botaozin(this),
+      inputs: inputs(this),
+      card: card(this),
     };
   },
 });

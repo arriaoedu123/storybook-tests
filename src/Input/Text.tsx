@@ -1,15 +1,12 @@
-import React, { HTMLAttributes, ReactNode } from 'react';
+import React from 'react';
 import * as S from './Text.styles';
+import * as T from './Text.types';
 
-export interface Props extends HTMLAttributes<HTMLInputElement> {
-  children: ReactNode;
-}
-
-export const InputText = ({ children, ...props }: Props) => {
+export const InputText = ({ children, variant, ...props }: T.Text) => {
   return (
     <S.FieldContainer>
       <S.LabelField>{children}</S.LabelField>
-      <S.TextField {...props} type="text" />
+      <S.TextField {...props} variant={variant} type="text" />
     </S.FieldContainer>
   );
 };
